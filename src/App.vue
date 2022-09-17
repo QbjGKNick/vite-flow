@@ -1,9 +1,5 @@
 <template>
-  <div>
-    main App
-  </div>
+  <div>main App</div>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
