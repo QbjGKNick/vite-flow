@@ -1,8 +1,26 @@
 <template>
   <div>
-    <input type="text" v-model="todo" />
-
-    <button @click="addTodo">添加内容</button>
+    <h1 text-center text-red>
+      <div class="i-ep-aim"></div>
+      Todo List
+      <div class="i-zf-circle"></div>
+    </h1>
+    <div flex items-center justify-center>
+      <input
+        type="text"
+        v-model="todo"
+        h-25px
+        shadow
+        shadow-inset
+        shadow-green-5
+      />
+    </div>
+    <button
+      @click="addTodo"
+      class="py-2 px-3 inline-block bg-blue-100 rounded-lg text-#ccc"
+    >
+      添加内容
+    </button>
 
     <TodoList :todos="todos" />
   </div>

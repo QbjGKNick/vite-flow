@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 import AutoImport from "unplugin-auto-import/vite"
@@ -25,6 +26,11 @@ export default defineConfig({
       // 配置和 rollup 一样
       { find: "@", replacement: path.resolve(__dirname, "src") }
     ]
+  },
+  test: {
+    globals: true,
+    environment: "happy-dom",
+    transformMode: { web: [/.tsx$/] }
   }
 })
 
