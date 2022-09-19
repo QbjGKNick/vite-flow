@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue"
 import AutoImport from "unplugin-auto-import/vite"
 import jsx from "@vitejs/plugin-vue-jsx" // 支持 tsx 语法
 import path from "path"
+import { viteMockServe } from "vite-plugin-mock"
 
 import Unocss from "unocss/vite"
 import { presetUno, presetAttributify, presetIcons } from "unocss"
@@ -11,6 +12,7 @@ import { presetUno, presetAttributify, presetIcons } from "unocss"
 // vite 默认只会编译ts 不会检测ts
 export default defineConfig({
   plugins: [
+    viteMockServe(),
     vue(),
     AutoImport({
       imports: ["vue", "vue-router"]
