@@ -15,8 +15,8 @@ export default defineConfig({
     // viteMockServe(),
     vue(),
     AutoImport({
-      imports: ["vue", "vue-router"]
-      // eslintrc: { enabled: true }
+      imports: ["vue", "vue-router", "pinia"],
+      eslintrc: { enabled: false }
     }),
     jsx(),
     Unocss({

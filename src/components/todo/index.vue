@@ -14,13 +14,13 @@
         shadow-inset
         shadow-green-5
       />
+      <button
+        @click="addTodo"
+        class="py-2 px-3 inline-block bg-blue-100 rounded-lg text-black"
+      >
+        添加内容
+      </button>
     </div>
-    <button
-      @click="addTodo"
-      class="py-2 px-3 inline-block bg-blue-100 rounded-lg text-#ccc"
-    >
-      添加内容
-    </button>
 
     <TodoList :todos="todos" />
   </div>

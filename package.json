@@ -37,11 +37,13 @@
     "vue-tsc": "^0.40.13"
   },
   "dependencies": {
+    "@iconify-json/ep": "^1.1.7",
     "@types/jest": "^29.0.3",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "eslint": "^8.23.1",
     "eslint-plugin-vue": "^9.4.0",
+    "pinia": "^2.0.22",
     "vue": "^3.2.39"
   }
 }
