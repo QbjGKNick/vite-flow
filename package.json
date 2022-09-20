@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build:lint": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "lint": "eslint --fix --ext .ts,.tsx,.vue src --quiet",
     "prepare": "husky install",
     "test": "vitest",
