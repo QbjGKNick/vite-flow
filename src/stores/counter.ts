@@ -16,7 +16,7 @@ export const useCounterStore = defineStore("counter", () => {
   const doubleCount = computed(() => {
     return count.value * 2
   })
-  
+
   const changeCount = (playload: number) => {
     return new Promise<void>((resolve, reject) => {
       setTimeout(() => {
